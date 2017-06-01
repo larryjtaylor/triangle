@@ -12,15 +12,15 @@
     <h3>Insert the lengths of the sides of a triangle to discover what kind of triangle it is.</h3>
 
     <form id="triangle-sides">
-      <div class="side" id="side-a">
+      <div class="side">
         <label for="side-a">Side A</label>
         <input id="side-a" type="number" name="side">
       </div>
-      <div class="side" id="side-b">
+      <div class="side">
         <label for="side-b">Side B</label>
         <input id="side-b" type="number" name="side">
       </div>
-      <div class="side" id="side-c">
+      <div class="side">
         <label for="side-c">Side C</label>
         <input id="side-c" type="number" name="side">
       </div>
@@ -28,19 +28,17 @@
       <button type="submit" class="btn btn-danger">Classify your triangle!</button>
 
     </form>
-    <div class="answer">
-      <div class="equilateral">
-        <h4>You're triangle is an equilateral triangle!</h4>
-      </div>
-      <div class="isosceles">
-        <h4>You're triangle is an isosceles triangle!</h4>
-      </div>
-      <div class="scalene">
-        <h4>You're triangle is an scalene triangle!</h4>
-      </div>
-      <div class="not">
-        <h4>You're triangle is NOT a triangle!</h4>
-      </div>
+    <div id="equilateral">
+      <h4>Your triangle is an equilateral triangle!</h4>
+    </div>
+    <div id="isosceles">
+      <h4>Your triangle is an isosceles triangle!</h4>
+    </div>
+    <div id="scalene">
+      <h4>Your triangle is an scalene triangle!</h4>
+    </div>
+    <div id="not">
+      <h4>Your triangle is NOT a triangle!</h4>
     </div>
   </body>
 </html>
