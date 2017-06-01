@@ -6,14 +6,18 @@ $(document).ready(function() {
     var sideB = parseInt($("input#side-b").val());
     var sideC = parseInt($("input#side-c").val());
 
-    if (sideA === sideB && sideA === sideC) {
+    if (sideA + sideB <= sideC || sideB + sideC <= sideA || sideA + sideC <= sideB) {
+      $(".answer").hide();
+      $("#not").show();
+    } else if (sideA === sideB && sideA === sideC) {
+      $(".answer").hide();
       $("#equilateral").show();
     } else if (sideA === sideB || sideA === sideC || sideB === sideC) {
+      $(".answer").hide();
       $("#isosceles").show();
     } else if (sideA !== sideB && sideA !== sideC && sideB !== sideC) {
+      $(".answer").hide();
       $("#scalene").show();
-    } else {
-      $("#not").show();
     }
 
   });
